@@ -1,1 +1,72 @@
 
+Program 1
+import java.util.Scanner;
+public class JavaBasicsDemo {
+ public static void main(String[] args) {
+ // Variables and Data Types
+ int age;
+ float marks;
+ double salary;
+ char grade;
+ boolean passed;
+ String name;
+ // Scanner object for input
+ Scanner sc = new Scanner(System.in);
+ // Input
+ System.out.print("Enter your name: ");
+ name = sc.nextLine();
+ System.out.print("Enter your age: ");
+ age = sc.nextInt();
+ System.out.print("Enter your marks: ");
+ marks = sc.nextFloat();// Assign values
+ salary = 25000.50;
+ grade = 'A';
+ passed = true;
+ // Display Variables
+ System.out.println("\n----- Student Details -----");
+ System.out.println("Name : " + name);
+ System.out.println("Age : " + age);
+ System.out.println("Marks : " + marks);
+ System.out.println("Salary : " + salary);
+ System.out.println("Grade : " + grade);
+ System.out.println("Passed : " + passed);
+ // Operators
+ System.out.println("\n----- Operators -----");
+ System.out.println("Addition (Age + 5): " + (age + 5));
+ System.out.println("Subtraction (Marks - 10): " + (marks - 10));
+ System.out.println("Multiplication (Age * 2): " + (age * 2));
+ System.out.println("Division (Age / 2): " + (age / 2));
+ System.out.println("Modulus (Age % 2): " + (age % 2));
+ // Relational Operator
+ if (marks >= 50) {
+ System.out.println("\nResult: Pass");
+ } else {
+ System.out.println("\nResult: Fail");
+ }// Switch Statement
+ switch (grade) {
+ case 'A':
+ System.out.println("Excellent Performance");
+ break;
+ case 'B':
+ System.out.println("Good Performance");
+ break;
+ case 'C':
+ System.out.println("Average Performance");
+ break;
+ default:
+ System.out.println("Needs Improvement");
+ }
+ // For Loop
+ System.out.println("\nFor Loop:");
+ for (int i = 1; i <= 5; i++) {
+ System.out.println("Count = " + i);
+ }
+ // While Loop
+ System.out.println("\nWhile Loop:");
+ int i = 1;
+ while (i <= 3) {
+ System.out.println("Value = " + i);
+ i++;}
+ sc.close();
+ }
+}
